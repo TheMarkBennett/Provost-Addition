@@ -9,6 +9,7 @@ License:      GPL2
 License URI:  https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain:  ucf
 Domain Path:  /languages
+GitHub Plugin URI: https://github.com/TheMarkBennett/Provost-Addition
 */
 
 

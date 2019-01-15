@@ -44,7 +44,7 @@ function cptui_register_my_cpts_initiatives() {
 		"hierarchical" => "false",
 		"rewrite" => array( "slug" => "initiatives", "with_front" => true ),
 		"query_var" => true,
-		"supports" => array( "title", "editor", "thumbnail", "page-attributes" ),
+		"supports" => array( "title", "editor", "thumbnail", "page-attributes", 'excerpt' ),
 		
 	);
 
