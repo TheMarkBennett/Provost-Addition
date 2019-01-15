@@ -17,4 +17,4 @@ define('UCF_PRO_PATH', plugin_dir_path(__FILE__));
 define('UCF_PRO_NAME', plugin_basename(__FILE__));
 
 
-require_once(UCF_PRO_PATH . 'inc/login.php');
+require_once(UCF_PRO_PATH . 'cpt/initiatives.php');
