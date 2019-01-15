@@ -42,7 +42,7 @@ function cptui_register_my_cpts_initiatives() {
 		"capability_type" => "post",
 		"map_meta_cap" => true,
 		"hierarchical" => "false",
-		//"rewrite" => array( "slug" => "initiatives", "with_front" => true ),
+		"rewrite" => array( "slug" => "initiatives", "with_front" => true ),
 		"query_var" => true,
 		"supports" => array( "title", "editor", "thumbnail", "page-attributes" ),
 		
