@@ -38,7 +38,7 @@ function register_ucf_cpts_initiatives() {
 		'label'                 => __( 'Initiative', 'ucf_lang' ),
 		'description'           => __( 'Allows you to create task-force, working groups and committees', 'ucf_lang' ),
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'thumbnail' ),
+		'supports'              => array( 'title', 'editor', 'thumbnail', 'excerpt' ),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,
@@ -49,9 +49,11 @@ function register_ucf_cpts_initiatives() {
 		'show_in_nav_menus'     => true,
 		'can_export'            => true,
 		'has_archive'           => 'initiatives',
+		'rewrite' => array( "slug" => 'initiatives', 'with_front' => true ),
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'post',
+		"map_meta_cap" => true,
 	);
 	register_post_type( 'initiatives', $args );
 
