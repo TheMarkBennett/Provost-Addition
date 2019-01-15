@@ -45,7 +45,7 @@ function cptui_register_my_cpts_initiatives() {
 		"rewrite" => array( "slug" => "initiatives", "with_front" => true ),
 		"query_var" => true,
 		"supports" => array( "title", "editor", "thumbnail", "page-attributes" ),
-		"taxonomies" => array( "initiative" ),
+		
 	);
 
 	register_post_type( "initiatives", $args );
