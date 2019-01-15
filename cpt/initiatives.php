@@ -1,6 +1,6 @@
 <?php
 
-if ( ! function_exists('register_ucf_cpts_initiatives') ) {
+
 
 // Register Custom Post Type
 function register_ucf_cpts_initiatives() {
@@ -43,19 +43,19 @@ function register_ucf_cpts_initiatives() {
 		'public'                => true,
 		'show_ui'               => true,
 		'show_in_menu'          => true,
-		'menu_position'         => 5,
+		'menu_position'         => 10,
 		'menu_icon'             => 'dashicons-paperclip',
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'can_export'            => true,
-		'has_archive'           => true,
+		'has_archive'           => 'initiatives',
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'post',
 	);
-	register_post_type( 'Initiatives', $args );
+	register_post_type( 'initiatives', $args );
 
 }
 add_action( 'init', 'register_ucf_cpts_initiatives', 0 );
 
-}
+
